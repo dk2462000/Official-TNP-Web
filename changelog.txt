@@ -1,3 +1,28 @@
+V3 - roshani jawale
+  Team section
+    -Arranges Team members acc to dept name
+    -added insta and linkedIn link in TPC member's card
+    -Corrected Spelling mitake in dep names
+
+  Activities
+    -Made 3 main act.
+    -added gallery section for act
+  
+  contact
+    -modified(not done)
+
+  footer
+    -modified footer(added page links, contact and imp links)
+
+  home page
+    -added buttons
+  
+  top recruiters
+    -added extra sections for companies
+
+  
+
+
 Version: 1.2.0
   - Updated Bootstrap to version 5.0.0-beta3
   - Updated all outdated third party vendor libraries to their latest versions
