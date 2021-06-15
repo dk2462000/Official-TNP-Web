@@ -446,6 +446,7 @@ section {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
+  width: 300px;
   transition: 0.5s;
   color: #fff;
   background: #4154f1;
