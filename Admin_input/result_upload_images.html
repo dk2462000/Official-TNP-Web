@@ -51,34 +51,30 @@
         </div>
     </form>
   
-    <script src=
-"https://www.gstatic.com/firebasejs/8.6.7/firebase.js">
-    </script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script> 
-    
-      
-    <script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+
+<script>
         var firebaseConfig = {
-    apiKey: "AIzaSyCuTyHYlO0YWwNwHwcbbOTL6DBpXiY1NMU",
-    authDomain: "result-images.firebaseapp.com",
-    projectId: "result-images",
-    storageBucket: "result-images.appspot.com",
-    messagingSenderId: "89384648085",
-    appId: "1:89384648085:web:2fb39cfbe7f8517997ca9c",
-    measurementId: "G-473G6KZMG5"
-};
-  
-        firebase.initializeApp(firebaseConfig);
-  
+    apiKey: "AIzaSyCrGKnr0qamJBtEmCgVoD3ehrvkjxBhaEA",
+    authDomain: "results-notice.firebaseapp.com",
+    databaseURL: "https://results-notice-default-rtdb.firebaseio.com",
+    projectId: "results-notice",
+    storageBucket: "results-notice.appspot.com",
+    messagingSenderId: "398495211691",
+    appId: "1:398495211691:web:3ed68e0ec9dcaaee9f17ee",
+    measurementId: "G-CQFFLSPJGZ"
+  };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+   
         var messagesRef = firebase.database()
-            .ref('Collected Data');
+            .ref('results');
           
         document.getElementById('contactForm')
             .addEventListener('submit', submitForm);
@@ -86,7 +82,7 @@
         function submitForm(e) {
             e.preventDefault();
   
-            // Get values
+           
             var name = getInputVal('name');
             var Imagelink = getInputVal('Imagelink');
   
@@ -94,12 +90,12 @@
             document.getElementById('contactForm').reset();
         }
   
-        // Function to get get form values
+        
         function getInputVal(id) {
             return document.getElementById(id).value;
         }
   
-        // Save message to firebase
+        
         function saveMessage(name, Imagelink) {
             var newMessageRef = messagesRef.push();
             newMessageRef.set({
@@ -107,7 +103,7 @@
                 Imagelink: Imagelink,
             });
         }
-    </script>
+</script>
 </body>
   
 </html>
