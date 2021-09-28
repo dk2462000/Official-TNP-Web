@@ -1453,7 +1453,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 0.3s;
 }
 
@@ -2352,4 +2352,8 @@ section {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+.center {
+  margin: auto;
 }
